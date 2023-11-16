@@ -9,9 +9,7 @@
 		"resolveJsonModule": true,
 		"baseUrl": "./",
 		"paths": {
-			"@src/*": [ "./src/*" ],
-			"@lib/*": [ "./src/lib/*" ],
-			"@utils/*": [ "./src/utils/*" ]
+			"@src/*": [ "./src/*" ]
 		}
 	},
 	"files": [
