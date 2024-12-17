@@ -1,17 +1,39 @@
 {
 	"compilerOptions": {
+		// Enable latest features
+		"lib": [
+			"ESNext",
+			"DOM"
+		],
 		"target": "ESNext",
-		"module": "NodeNext",
-		"moduleResolution": "NodeNext",
+		"module": "ESNext",
+		"moduleDetection": "force",
+		"allowJs": true,
 		"rootDir": "./src/",
 		"outDir": "./dist/",
-		"sourceMap": true,
 		"resolveJsonModule": true,
 		"baseUrl": "./",
 		"paths": {
-			"@src/*": [ "./src/*" ],
-			"@lib/*": [ "./src/lib/*" ],
-		}
+			"@src/*": [
+				"./src/*"
+			],
+			"@lib/*": [
+				"./src/lib/*"
+			],
+		},
+		// Bundler mode
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"verbatimModuleSyntax": true,
+		"noEmit": true,
+		// Best practices
+		"strict": true,
+		"skipLibCheck": true,
+		"noFallthroughCasesInSwitch": true,
+		// Some stricter flags (disabled by default)
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"noPropertyAccessFromIndexSignature": false
 	},
 	"files": [
 		"src/index.ts"

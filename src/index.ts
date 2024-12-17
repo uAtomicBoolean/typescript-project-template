@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
-dotenv.config({ path: 'src/.env.example' });
+import { testLib } from '@lib/lib';
 
-console.log(process.env.EXAMPLE);
+testLib();
+console.log('test');
